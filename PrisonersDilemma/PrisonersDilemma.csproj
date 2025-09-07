@@ -7,4 +7,12 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <DefineConstants>TRACE;USE_MULTIPROCESSING</DefineConstants>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <DefineConstants>TRACE;USE_MULTIPROCESSING</DefineConstants>
+    </PropertyGroup>
+
 </Project>
